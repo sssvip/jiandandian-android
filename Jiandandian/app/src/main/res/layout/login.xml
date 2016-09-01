@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jdd.jiandandian.activity.login">
+
+    <include layout="@layout/actionbar"></include>
+
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/actionBar"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/phone_login"
+            style="@style/login_item"
+            android:text="手机号快捷登录" />
+
+        <TextView
+            android:id="@+id/username_login"
+            style="@style/login_item"
+            android:text="账号密码登录" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/login_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_login">
+
+    </FrameLayout>
+
+</RelativeLayout>

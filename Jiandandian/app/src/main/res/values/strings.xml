@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Jiandandian</string>
+    <string name="my">我的</string>
+    <string name="order">订单</string>
+    <string name="main">首页</string>
+    <string name="login">登录</string>
+    <string name="notice">提示</string>
+    <string name="confim">确认</string>
+    <string name="cancel">取消</string>
+    <string name="getCode">获取验证码</string>
+    <string name="back">返回</string>
+    <string name="title">标题</string>
+    <string name="register">注册</string>
+    <string name="test">测试</string>
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/default_20dp"
+        android:paddingLeft="@dimen/default_10dp"
+        android:paddingRight="@dimen/default_10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <!--The first line-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my" />
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:singleLine="true"
+                android:textSize="@dimen/default_text_size"
+                android:hint="请输入用户名（手机号/邮箱/用户名）"
+                android:background="@null" />
+
+            <TextView
+                android:id="@+id/tv_username_clear"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/close"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/default_20dp"
+            android:background="@color/gray"></View>
+        <!--The second line-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/password" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:singleLine="true"
+                android:textSize="@dimen/default_text_size"
+                android:hint="请输入您的密码"
+                android:background="@null" />
+
+            <TextView
+                android:id="@+id/tv_password_clear"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/default_20dp"
+                android:background="@drawable/close"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/gray"></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码？"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/default_20dp"
+            android:textColor="@color/light_black" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_default_selector"
+            android:textColor="@color/white"
+            android:text="@string/login" />
+    </LinearLayout>
+</LinearLayout>

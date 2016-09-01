@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--ActionBar布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionBar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbar_height"
+    android:layout_alignParentTop="true"
+    android:background="@color/default_color"
+    android:orientation="horizontal">
+    <!--actionBar Left-->
+    <LinearLayout
+        android:id="@+id/left"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/actionBar_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_selector"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/actionBar_left_icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/left" />
+
+            <TextView
+                android:id="@+id/actionBar_left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_text_size_20sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--actionBar center-->
+    <LinearLayout
+        android:id="@+id/center"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/actionBar_center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_selector"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/actionBar_center_icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/left" />
+
+            <TextView
+                android:id="@+id/actionBar_center_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_text_size_20sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--actionBar Right-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/actionBar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="立即注册"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_text_size_20sp" />
+    </RelativeLayout>
+</LinearLayout>
+

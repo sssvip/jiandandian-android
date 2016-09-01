@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!-- 店铺名称及评价状态 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        style="@style/item_padding">
+
+        <TextView
+            android:id="@+id/shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="曾鹏家常菜"
+            android:textSize="@dimen/default_text_size_20sp" />
+
+        <TextView
+            android:layout_width="@dimen/default_20dp"
+            android:layout_height="@dimen/default_20dp"
+            android:layout_alignBaseline="@id/shop_name"
+            android:layout_marginLeft="@dimen/default_10dp"
+            android:layout_toRightOf="@id/shop_name"
+            android:background="@drawable/abc_ic_go" />
+
+        <TextView
+            android:id="@+id/evaluate_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="待评价"
+            android:textColor="@color/dark_yellow"
+            android:textSize="@dimen/default_text_size_20sp" />
+    </RelativeLayout>
+
+    <!-- 分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@style/item_padding">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:src="@drawable/aaa"
+            android:background="@drawable/border" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/default_30dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价格:15元"
+                android:textColor="@color/light_red" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
